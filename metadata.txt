@@ -6,7 +6,7 @@
 name=Indiana LiDAR
 qgisMinimumVersion=3.0
 description=This plugin helps you access Indiana LiDAR data products.
-version=0.2.0
+version=0.14.0
 author=Jinha Jung
 email=jinha@purdue.edu
 
