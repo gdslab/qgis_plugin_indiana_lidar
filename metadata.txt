@@ -6,7 +6,7 @@
 name=Indiana LiDAR
 qgisMinimumVersion=3.0
 description=This plugin helps you access Indiana LiDAR data products.
-version=0.12
+version=0.2.0
 author=Jinha Jung
 email=jinha@purdue.edu
 
@@ -20,7 +20,8 @@ repository=https://github.com/gdslab/qgis_plugin_indiana_lidar
 
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
-# changelog=
+changelog=
+v.0.2.0: Added DTM Hillshade data products
 
 # Tags are comma separated with spaces allowed
 tags=python

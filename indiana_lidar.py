@@ -443,6 +443,101 @@ class IndianaLidar:
             "white": "white_dsm_2018.tif",
             "whitley": "whitley_dsm_2017.tif",
         }
+        
+        self.dtm_hs_dictionary = {
+            "adams": "adams_dtm_hs_2017.tif",
+            "allen": "allen_dtm_hs_2017.tif",
+            "bartholomew": "bartholomew_dtm_hs_2017.tif",
+            "benton": "benton_dtm_hs_2018.tif",
+            "blackford": "blackford_dtm_hs_2017.tif",
+            "boone": "boone_dtm_hs_2018.tif",
+            "brown": "brown_dtm_hs_2017.tif",
+            "carroll": "carroll_dtm_hs_2018.tif",
+            "cass": "cass_dtm_hs_2017.tif",
+            "clark": "clark_dtm_hs_2017.tif",
+            "clay": "clay_dtm_hs_2018.tif",
+            "clinton": "clinton_dtm_hs_2018.tif",
+            "crawford": "crawford_dtm_hs_2018.tif",
+            "daviess": "daviess_dtm_hs_2018.tif",
+            "dearborn": "dearborn_dtm_hs_2017.tif",
+            "decatur": "decatur_dtm_hs_2017.tif",
+            "dekalb": "dekalb_dtm_hs_2017.tif",
+            "delaware": "delaware_dtm_hs_2017.tif",
+            "dubois": "dubois_dtm_hs_2018.tif",
+            "elkhart": "elkhart_dtm_hs_2017.tif",
+            "fayette": "fayette_dtm_hs_2017.tif",
+            "floyd": "floyd_dtm_hs_2017.tif",
+            "fountain": "fountain_dtm_hs_2018.tif",
+            "franklin": "franklin_dtm_hs_2017.tif",
+            "fulton": "fulton_dtm_hs_2017.tif",
+            "gibson": "gibson_dtm_hs_2018.tif",
+            "grant": "grant_dtm_hs_2017.tif",
+            "greene": "greene_dtm_hs_2018.tif",
+            "hamilton": "hamilton_dtm_hs_2016.tif",
+            "hancock": "hancock_dtm_hs_2017.tif",
+            "harrison": "harrison_dtm_hs_2017.tif",
+            "hendricks": "hendricks_dtm_hs_2018.tif",
+            "henry": "henry_dtm_hs_2017.tif",
+            "howard": "howard_dtm_hs_2017.tif",
+            "huntington": "huntington_dtm_hs_2017.tif",
+            "jackson": "jackson_dtm_hs_2017.tif",
+            "jasper": "jasper_dtm_hs_2018.tif",
+            "jay": "jay_dtm_hs_2017.tif",
+            "jefferson": "jefferson_dtm_hs_2017.tif",
+            "jennings": "jennings_dtm_hs_2017.tif",
+            "johnson": "johnson_dtm_hs_2017.tif",
+            "knox": "knox_dtm_hs_2018.tif",
+            "kosciusko": "kosciusko_dtm_hs_2017.tif",
+            "lagrange": "lagrange_dtm_hs_2017.tif",
+            "lake": "lake_dtm_hs_2018.tif",
+            "laporte": "laporte_dtm_hs_2018.tif",
+            "lawrence": "lawrence_dtm_hs_2018.tif",
+            "madison": "madison_dtm_hs_2017.tif",
+            "marion": "marion_dtm_hs_2016.tif",
+            "marshall": "marshall_dtm_hs_2017.tif",
+            "martin": "martin_dtm_hs_2018.tif",
+            "miami": "miami_dtm_hs_2017.tif",
+            "monroe": "monroe_dtm_hs_2018.tif",
+            "montgomery": "montgomery_dtm_hs_2018.tif",
+            "morgan": "morgan_dtm_hs_2018.tif",
+            "newton": "newton_dtm_hs_2018.tif",
+            "noble": "noble_dtm_hs_2017.tif",
+            "ohio": "ohio_dtm_hs_2017.tif",
+            "orange": "orange_dtm_hs_2018.tif",
+            "owen": "owen_dtm_hs_2018.tif",
+            "parke": "parke_dtm_hs_2018.tif",
+            "perry": "perry_dtm_hs_2018.tif",
+            "pike": "pike_dtm_hs_2018.tif",
+            "porter": "porter_dtm_hs_2018.tif",
+            "posey": "posey_dtm_hs_2020.tif",
+            "pulaski": "pulaski_dtm_hs_2018.tif",
+            "putnam": "putnam_dtm_hs_2018.tif",
+            "randolph": "randolph_dtm_hs_2017.tif",
+            "ripley": "ripley_dtm_hs_2017.tif",
+            "rush": "rush_dtm_hs_2017.tif",
+            "scott": "scott_dtm_hs_2017.tif",
+            "shelby": "shelby_dtm_hs_2017.tif",
+            "spencer": "spencer_dtm_hs_2018.tif",
+            "starke": "starke_dtm_hs_2018.tif",
+            "steuben": "steuben_dtm_hs_2017.tif",
+            "stjoseph": "stjoseph_dtm_hs_2017.tif",
+            "sullivan": "sullivan_dtm_hs_2018.tif",
+            "switzerland": "switzerland_dtm_hs_2017.tif",
+            "tippecanoe": "tippecanoe_dtm_hs_2018.tif",
+            "tipton": "tipton_dtm_hs_2017.tif",
+            "union": "union_dtm_hs_2017.tif",
+            "vanderburgh": "vanderburgh_dtm_hs_2020.tif",
+            "vermillion": "vermillion_dtm_hs_2018.tif",
+            "vigo": "vigo_dtm_hs_2018.tif",
+            "wabash": "wabash_dtm_hs_2017.tif",
+            "warren": "warren_dtm_hs_2018.tif",
+            "warrick": "warrick_dtm_hs_2020.tif",
+            "washington": "washington_dtm_hs_2017.tif",
+            "wayne": "wayne_dtm_hs_2017.tif",
+            "wells": "wells_dtm_hs_2017.tif",
+            "white": "white_dtm_hs_2018.tif",
+            "whitley": "whitley_dtm_hs_2017.tif",
+        }
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
@@ -560,6 +655,8 @@ class IndianaLidar:
             cog_url = self.l2_dir + selected_county_name + "/cog/" + self.dsm_dictionary[selected_county_name]
         elif selected_data_product == "NDHM":
             cog_url = self.l2_dir + selected_county_name + "/cog/" + self.ndhm_dictionary[selected_county_name]
+        elif selected_data_product == "DTM Hillshade":
+            cog_url = self.l2_dir + selected_county_name + "/cog/" + self.dtm_hs_dictionary[selected_county_name]
         self.dlg.textEdit_cog_url.setText(cog_url)
 
     def add_to_map(self):
@@ -589,7 +686,7 @@ class IndianaLidar:
             # Initialize combo boxes
             self.dlg.comboBox_data_products.clear()
             self.dlg.comboBox_county.clear()
-            self.dlg.comboBox_data_products.addItems(["DTM", "DSM", "NDHM"])
+            self.dlg.comboBox_data_products.addItems(["DTM", "DSM", "NDHM", "DTM Hillshade"])
             self.dlg.comboBox_county.addItems(self.county_names)
             # Event handlers
             self.dlg.pushButton_add.clicked.connect(self.add_to_map)
