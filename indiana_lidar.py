@@ -27,7 +27,7 @@ from qgis.PyQt.QtWidgets import QAction
 from qgis.core import QgsRasterLayer, QgsProject
 
 # Initialize Qt resources from file resources.py
-from .resources import *
+from . import resources  # noqa: F401
 
 # Import the code for the dialog
 from .indiana_lidar_dialog import IndianaLidarDialog
@@ -443,7 +443,7 @@ class IndianaLidar:
             "white": "white_dsm_2018.tif",
             "whitley": "whitley_dsm_2017.tif",
         }
-        
+
         self.dtm_hs_dictionary = {
             "adams": "adams_dtm_hs_2017.tif",
             "allen": "allen_dtm_hs_2017.tif",
@@ -667,7 +667,7 @@ class IndianaLidar:
             "/vsicurl/" + cog_url, "Indiana_" + selected_county_name + "_county_" + selected_data_products
         )
         if rlayer.isValid():
-            QgsProject().instance().addMapLayer(rlayer)
+            QgsProject.instance().addMapLayer(rlayer)
         else:
             print("Not valid.")
 
@@ -680,7 +680,7 @@ class IndianaLidar:
 
         # Create the dialog with elements (after translation) and keep reference
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started
-        if self.first_start == True:
+        if self.first_start:
             self.first_start = False
             self.dlg = IndianaLidarDialog()
             # Initialize combo boxes
@@ -697,7 +697,7 @@ class IndianaLidar:
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
-        result = self.dlg.exec_()
+        result = self.dlg.exec()
         # See if OK was pressed
         if result:
             # Do something useful here - delete the line containing pass and
