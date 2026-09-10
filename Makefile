@@ -90,6 +90,8 @@ compile: $(COMPILED_RESOURCE_FILES)
 
 %.py : %.qrc $(RESOURCES_SRC)
 	pyrcc5 -o $*.py  $<
+	# pyrcc5 hardcodes a PyQt5 import, which fails on Qt6 builds of QGIS.
+	sed -i.bak 's/^from PyQt5 import QtCore$$/from qgis.PyQt import QtCore/' $*.py && rm -f $*.py.bak
 
 %.qm : %.ts
 	$(LRELEASE) $<

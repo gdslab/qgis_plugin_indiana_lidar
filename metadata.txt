@@ -4,9 +4,10 @@
 
 [general]
 name=Indiana LiDAR
-qgisMinimumVersion=3.0
+qgisMinimumVersion=3.22
+qgisMaximumVersion=4.99
 description=This plugin helps you access Indiana LiDAR data products.
-version=0.14.0
+version=0.15.0
 author=Jinha Jung
 email=jinha@purdue.edu
 
@@ -19,9 +20,14 @@ repository=https://github.com/gdslab/qgis_plugin_indiana_lidar
 # Recommended items:
 
 hasProcessingProvider=no
-# Uncomment the following line and add your changelog:
-changelog=
-v.0.2.0: Added DTM Hillshade data products
+
+changelog=0.15.0
+    - Compatible with both Qt5 and Qt6 builds of QGIS, so the plugin installs
+      on QGIS 3 and QGIS 4.
+    - Minimum QGIS version raised to 3.22, the oldest release the plugin is
+      tested against.
+    0.2.0
+    - Added DTM Hillshade data products.
 
 # Tags are comma separated with spaces allowed
 tags=python
@@ -40,7 +46,7 @@ deprecated=False
 # Check the documentation for more information.
 # plugin_dependencies=
 
-Category of the plugin: Raster, Vector, Database or Web
+# Category of the plugin: Raster, Vector, Database or Web
 # category=
 
 # If the plugin can run on QGIS Server.

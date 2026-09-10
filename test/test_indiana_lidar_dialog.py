@@ -14,7 +14,7 @@ __copyright__ = 'Copyright 2023, Jinha Jung'
 
 import unittest
 
-from qgis.PyQt.QtGui import QDialogButtonBox, QDialog
+from qgis.PyQt.QtWidgets import QDialogButtonBox, QDialog
 
 from indiana_lidar_dialog import IndianaLidarDialog
 
@@ -36,17 +36,17 @@ class IndianaLidarDialogTest(unittest.TestCase):
     def test_dialog_ok(self):
         """Test we can click OK."""
 
-        button = self.dialog.button_box.button(QDialogButtonBox.Ok)
+        button = self.dialog.button_box.button(QDialogButtonBox.StandardButton.Ok)
         button.click()
         result = self.dialog.result()
-        self.assertEqual(result, QDialog.Accepted)
+        self.assertEqual(result, QDialog.DialogCode.Accepted)
 
     def test_dialog_cancel(self):
         """Test we can click cancel."""
-        button = self.dialog.button_box.button(QDialogButtonBox.Cancel)
+        button = self.dialog.button_box.button(QDialogButtonBox.StandardButton.Cancel)
         button.click()
         result = self.dialog.result()
-        self.assertEqual(result, QDialog.Rejected)
+        self.assertEqual(result, QDialog.DialogCode.Rejected)
 
 if __name__ == "__main__":
     suite = unittest.makeSuite(IndianaLidarDialogTest)

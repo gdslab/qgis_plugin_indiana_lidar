@@ -667,7 +667,7 @@ class IndianaLidar:
             "/vsicurl/" + cog_url, "Indiana_" + selected_county_name + "_county_" + selected_data_products
         )
         if rlayer.isValid():
-            QgsProject().instance().addMapLayer(rlayer)
+            QgsProject.instance().addMapLayer(rlayer)
         else:
             print("Not valid.")
 
@@ -697,7 +697,7 @@ class IndianaLidar:
         # show the dialog
         self.dlg.show()
         # Run the dialog event loop
-        result = self.dlg.exec_()
+        result = self.dlg.exec()
         # See if OK was pressed
         if result:
             # Do something useful here - delete the line containing pass and
