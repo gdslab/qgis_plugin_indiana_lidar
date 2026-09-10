@@ -27,10 +27,11 @@ INCLUDE_FILES = [
     "resources.py",
     "metadata.txt",
     "icon.png",
+    "LICENSE",
 ]
 
-# Shipped when present. LICENSE is worth adding; the plugin is GPL v2+.
-OPTIONAL_FILES = ["LICENSE", ".flake8"]
+# Shipped when present.
+OPTIONAL_FILES = [".flake8"]
 
 # No vendored dependencies: the plugin imports only QGIS and PyQt.
 INCLUDE_TREES: list[str] = []
